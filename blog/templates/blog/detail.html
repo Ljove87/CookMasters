@@ -1,0 +1,26 @@
+
+{% extends "blog/base.html" %}
+{% block content %}
+
+<div class="container w-25  mt-5 pt-5" style=margin: 0 auto;>
+<div class="row">
+    
+    <div class="col-lg-5 col-xl-4">
+      <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+        <img class="img-fluid" src="{{ post.image.url }}" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+    </div>
+    <div class="col-lg-7 col-xl-8">
+      <h3 class="font-weight-bold mb-3"><strong>{{ post.title }}</strong></h3>
+      <p class="dark-grey-text">{{ post.content }}</p>
+      <p>by <a class="font-weight-bold">{{ post.author }}</a>, {{ post.date_posted|date:"F d, Y" }}</p>
+    </div>
+    
+  </div>
+
+</div>
+{% endblock content %}

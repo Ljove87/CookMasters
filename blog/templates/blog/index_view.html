@@ -1,0 +1,349 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+<div class="container-fluid wrapper">
+        <div class="col-md-4 text-center">
+                {% if messages %}
+                  {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                      {{ message }}
+                    </div>
+                  {% endfor %}
+                {% endif %}
+        </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-7">
+      <h2 class="title text-center" style="font-family: 'Lora', serif; font-weight: 800;">12 GODINA ISKUSTVA U KUHINJI, POSTAVLJANJU MENIJA, NOVIM RECEPTIMA I SVEMU ŠTO TREBA DA ZNATE O UKUSNOJ HRANI</h2>
+      <div class=" w-75 container-fluid">
+      <div class="row">
+        <div class="col col-md-6 text-center">
+            <div class="card cards">
+                <i class="fa fa-cutlery pt-4 fa-2x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Postavljanje Kuhinje</h5>
+                  <h5 class="card-text text-center">MENI</h5>
+                </div>
+                <a href="#meni" class="btn btn-dark btn-lg btn-block">Saznaj više</a>
+              </div> 
+        </div>
+        
+        <div class="col col-md-6 text-center">
+            <div class="card cards">
+                <i class="fa fa-cutlery pt-4 fa-2x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Novi Ukusni Recepti</h5>
+                  <h5 class="card-text text-center">Sadržaj recepata</h5>
+                </div>
+                <a href="#recepti" class="btn btn-dark btn-lg btn-block">Saznaj više</a>
+              </div> 
+        </div>
+
+        <div class="col col-md-6 text-center">
+            <div class="card cards">
+                <i class="fas fa-map-marked-alt pt-4 fa-2x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Kuvanje na Vašoj adresi</h5>
+                  <h5 class="card-text text-center">Potrebna oprema</h5>
+                </div>
+                <a href="#adresa" class="btn btn-dark  btn-lg btn-block">Saznaj više</a>
+              </div> 
+        </div>
+        <div class="col col-md-6 text-center">
+            <div class="card cards">
+                <i class="fa fa-cutlery pt-4 fa-2x" aria-hidden="true"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Ketering</h5>
+                  <h5 class="card-text text-center">Pitanja i odgovori</h5>
+                </div>
+                <a href="#ketering" class="btn btn-dark  btn-lg btn-block">Saznaj više</a>
+              </div> 
+        </div>
+      
+    
+    
+    </div>
+    </div>
+  </div>
+    
+    </div>
+  </div>
+</div>
+
+
+<!-- start of first section -->
+
+<section class="container-fluid w-100 first_section text-center">
+  <hr class="line-split">
+  <div class="container-fluid w-50">
+      <h1 class="text-center mt-5 mb-5">Saveti Šefa kuhinje</h1>
+  </div>
+
+  <div class="jumbotron w-75 div_inside" style="margin: 0 auto;">
+    <div class="row">
+        
+        <div class="col-xl-4">
+            
+                <img class="image_section mx-auto" src="../../../media/icons/serving-dish.png" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">PRIPREMA HRANE</h5>
+                  <hr class="mt-4">
+                  <p class="card-text pt-2" style="text-align:center; font-family: 'Lora', serif;">Kreiranje ukusnih specijaliteta za mnoge kulinare je svakodnevni izazov, ali retko ko u tom trenutku razmišlja da li će prilikom kuvanja i pripreme namirnica, jelo izgubiti svoje dragocene sastojke. Upravo zbog toga treba znati neka od osnovnih pravila koja će sprečiti uništavanje vitamina i minerala tokom pripreme jela</p>
+                </div>
+              
+        </div>
+
+        <div class="col-xl-4">
+           
+                <img class="card-img-top image_section mx-auto" src="../../../media/icons/754938.svg" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">KVALITET HRANE</h5>
+                  <hr class="mt-4">
+                  <p class="card-text pt-2" style="text-align:center; font-family: 'Lora', serif;">Danas kod prezentacije hrane, estetska privlačnost sve više dobija na značaju. Način na koji je tanjir aranžiran predstavlja i sam kvalitet restorana. Uspešnost u serviranju hrane pored estetike samog kuvara, potrebno je mnogo truda i rada.</p>
+                  
+                </div>
+            
+        </div>
+
+        <div class="col-xl-4">
+            
+                <img class="card-img-top image_section mx-auto" src="https://icons-for-free.com/free-icons/png/160/63435.png" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">KAKO POSTATI ŠEF</h5>
+                    <hr class="mt-4">
+                    <p class="card-text pt-2" style="text-align:center; font-family: 'Lora', serif;">Svako ko želi da uči, pedantan je i hoće da naporno radi, dobrodošao je u profesiju kuvara. Posla je bilo, ima ga sada a tek će ga biti, i to na višem nivou. Ali, kandidati za buduće kuvare i šefove kuhinja, neka se pripreme na ozbiljan, težak i zahtevan svakodnevni rad</p>
+                
+                </div>
+              
+        </div>
+
+       
+        <div class="div container-fluid w-75 text-center mt-4">
+              <a href="#" class="btn button-section btn-lg mt-4">Learn More</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- end of first section -->
+
+<section id="meni" class="container-fluid w-100 second_section">
+    <hr class="line-split">
+    <div class="container-fluid w-50">
+        <h2 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">Postavka Kuhinje za Vaš restoran</h2>
+        <h5 class="text text-center" style="font-family:Lora, serif">Od malih do restorana pa do restorana koji mogu da prime i preko 500 ljudi</h5>  
+    </div>
+    <div class="container-fluid w-75">
+        <p class="text-info text-center lead">LOREM IPSUM SIT DOLOR AMIT CONSECETUR ADISPLICING ELIT</p>
+    </div>
+    <div class="container-fluid w-75">
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+              <div class="">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Average cost of a relevant click/visit</h5>
+                      <p class="text-center percent"><b>10%</b></p>
+                  </div>
+             </div>  
+          </div>
+          <div class="col">+</div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+              <div class="">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Average Conversion Rate</h5>
+                      <p class="text-center percent"><b>25%</b></p>
+                  </div>
+                </div>  
+          </div>
+        <div class="col">+</div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+              <div class="">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Average Customer Acquisition Rate</h5>
+                      <p class="text-center percent"><b>40%</b></p>
+                  </div>
+                </div>  
+          </div>
+          <div class="col">=</div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+              <div class="">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Average Cost of a new Customer</h5>
+                      <p class="text-center percent"><b>$100</b></p>
+                  </div>
+                </div>  
+          </div>
+          <div class="col">=></div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+              <div class="">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Average Return on Investment</h5>
+                      <p class="text-center percent"><b>+200%</b></p>
+                  </div>
+                </div>  
+          </div>
+                       
+      </div>
+        <div class="div container-fluid w-75 text-center mb-5">
+        <p class="text  mt-4" style="font-size: 18px;">Pay Per Clicks offers an instant revenue but without a possibility for an exponential growth or a permanently added value. Combination of SEO and PPC forms a comprehensive online strategy that benefits your company both in the short and the long run.</p>
+        <a href="#" class="btn button-section btn-lg mt-4">Learn More</a>
+        </div>
+      </div>
+</section>
+<!--  inner section  -->
+
+<!-- RECEPTI -->
+<section id="recepti" class="container-fluid w-100 second_section p-4" style="background-color: #f1f1f1">
+    <hr class="line-split">
+    <div class="container-fluid w-50">
+        <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">Novi uskusni recepti koje morate da imate</h1>
+        <h5 class="text text-center" style="font-family:Lora, serif">Pravljenje novih recepata za vaš restoran</h5>  
+    </div>
+    <div class="container-fluid w-75">
+        <p class="text-info text-center lead">LOREM IPSUM SIT DOLOR AMIT CONSECETUR ADISPLICING ELIT</p>
+    </div>
+    <div class="container-fluid w-75">
+      <div class="row">     
+      </div>
+        <div class="div container-fluid w-75 text-center mb-5">
+        <p class="text mt-4" style="font-size: 18px; font-family: Lora, serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nisi at elit lacinia facilisis mattis sit amet lorem. Nam purus elit, rhoncus sodales condimentum ut, gravida in velit. Fusce ut massa gravida neque vulputate tincidunt. Sed sodales eleifend risus vitae gravida. Nam quis mauris metus. Mauris eget massa nec nisi semper sagittis accumsan ac nibh. Pellentesque vitae diam dui.</p>
+        <a href="" class="btn button-section btn-lg mt-4">Learn More</a>
+        </div>
+      </div>
+</section>
+<!-- KRAJ RECEPATA SEKCIJA -->
+
+<!-- KUVANJE NA VASOJ ADRESI -->
+<section id="adresa" class="container-fluid w-100 second_section">
+        <hr class="line-split">
+        <div class="container-fluid w-50">
+            <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">Kuvanje na Vašoj adresi</h1>
+            <h5 class="text text-center" style="font-family:Lora, serif">Dolazak lično na vašu kuću ili stan</h5>  
+        </div>
+        <div class="container-fluid w-75">
+            <p class="text-info text-center lead">LOREM IPSUM SIT DOLOR AMIT CONSECETUR ADISPLICING ELIT</p>
+        </div>
+        <div class="container-fluid w-75">
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+    
+              </div>    
+                           
+          </div>
+            <div class="div container-fluid w-75 text-center mb-5">
+            <p class="text mt-4" style="font-size: 18px; font-family: Lora, serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nisi at elit lacinia facilisis mattis sit amet lorem. Nam purus elit, rhoncus sodales condimentum ut, gravida in velit. Fusce ut massa gravida neque vulputate tincidunt. Sed sodales eleifend risus vitae gravida. Nam quis mauris metus. Mauris eget massa nec nisi semper sagittis accumsan ac nibh. Pellentesque vitae diam dui.</p>
+            <a href="#" class="btn button-section btn-lg mt-4">Learn More</a>
+            </div>
+          </div>
+</section>
+<!-- KUVANJE NA VASOJ ADRESI KRAJ -->
+
+<!-- KETERING -->
+<section id="ketering" class="container-fluid w-100 second_section p-4" style="background-color: #f1f1f1">
+        <hr class="line-split">
+        <div class="container-fluid w-50">
+            <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">KETERING</h1>
+            <h5 class="text text-center" style="font-family:Lora, serif">Slani i slatki ketering za rođendane, venčanja, korporativne proslave, slave...</h5>  
+        </div>
+        <div class="container-fluid w-75">
+            <p class="text-info text-center lead">LOREM IPSUM SIT DOLOR AMIT CONSECETUR ADISPLICING ELIT</p>
+        </div>
+        <div class="container-fluid w-75">
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+    
+              </div>    
+                           
+          </div>
+            <div class="div container-fluid w-75 text-center mb-5">
+            <p class="text mt-4" style="font-size: 18px; font-family: Lora, serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nisi at elit lacinia facilisis mattis sit amet lorem. Nam purus elit, rhoncus sodales condimentum ut, gravida in velit. Fusce ut massa gravida neque vulputate tincidunt. Sed sodales eleifend risus vitae gravida. Nam quis mauris metus. Mauris eget massa nec nisi semper sagittis accumsan ac nibh. Pellentesque vitae diam dui.</p>
+            <a href="#" class="btn button-section btn-lg mt-4">Ketering</a>
+            </div>
+          </div>
+</section>
+<!-- KETERING KRAJ -->
+<!-- Testemonials slider -->
+
+<!-- Section: Testimonials v.1 -->
+<section class="text-center my-5 p-1">
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">Our Testimonials</h2>
+    <!-- Section description -->
+    <p class="dark-grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+      eum porro a pariatur veniam.</p>
+  
+    <!-- Grid row -->
+    <div class="container-fluid w-75">
+        <div class="row">
+    
+     
+        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 col-xl-6">
+          <div class="column-widget">  
+                <div class="card testimonial-card">
+                <div class="card-up info-color"></div>
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid mt-4">
+                </div>
+                <hr>
+                <div class="card-body">
+                    <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>These guys managed to position our website on the leading positions on Google for the strongest New York search terms. We are now getting a massive amount of leads through the calculator and SEO became a cornerstone of our business growth. Dumbo now serves.</p>
+                </div>
+                <hr>
+                <h4 class="font-weight-bold text-primary">-John Doe</h4>
+                <p>New York, USA</p>
+                <div class="text-center">
+                    <img src="../media/quote.png" class="rounded pb-3"  style="width:35px;" alt="">
+                </div>
+                </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-sm-12 col-xs-10 col-md-12 mb-4 col-xl-6">
+          <div class="column-widget">
+                <div class="card testimonial-card">
+                <div class="card-up info-color"></div>
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(11).jpg" class="rounded-circle img-fluid mt-4">
+                </div>
+                <hr>
+                <div class="card-body">
+                    <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>After only a month of cooperation with Movers Development, the before and after situation is much different. They delivered on everything we agreed on in record time. We feel our moving company has really grown online since we got into business with them.</p>
+                </div>
+                <hr>
+                <h4 class="font-weight-bold text-primary">-Aaron Morris</h4>
+                <p>New York, USA</p>
+                <div class="text-center">
+                    <img src="../media/quote.png" class="rounded pb-3"  style="width:35px;" alt="">
+                </div>
+                </div>
+          </div>
+        </div>
+
+        
+  
+  
+  </section>
+  <!-- Section: Testimonials  -->
+
+  <!-- Video caluclator -->
+
+<section class="container-fluid w-100 first_section">
+    <hr class="line-split">
+        <div class="container-fluid col-xs-6 w-75">
+            <h1 class="text-center mt-5 mb-5">Moje gostovanje na televiziji N1</h1>
+            <p class="text-center" style="font-size: 18px;">For the first time in the industry, customers will have the privilege of having accurate Moving Estimates in a matter of few clicks. Designed to fit your website perfectly and match the pricing system of your company.</p>
+        </div>
+        <div class="container-fluid w-75 col-xl-6 boxshadow">
+                <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5 ">
+                    <iframe class="embed-responsive-item" style=" border: 3px solid #073d3d;" frameborder="0" src="https://www.youtube.com/embed/bUh2rZAEzd0" allowfullscreen></iframe>
+                </div>
+        </div>
+</section>
+
+
+
+
+{% endblock content %}
