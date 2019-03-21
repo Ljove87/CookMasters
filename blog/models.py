@@ -2,8 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
-from django.template.defaultfilters import slugify
-from django import forms
+
 
 
 class Post(models.Model):
@@ -17,8 +16,9 @@ class Post(models.Model):
     class Meta:
         ordering = ['-date_posted']
     
-    def save(self):
+    def save(self, *args, **kwargs):
         slug = self.title
+        super(Post, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
         return reverse('detail', kwargs={'slug':self.slug})

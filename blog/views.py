@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from . models import Post
 from django.core.mail import send_mail
-from django.views.generic import DeleteView, ListView
+from django.views.generic import DetailView, ListView
 
 
 def index_view(request):
@@ -15,7 +15,7 @@ def blog_view(request):
     }
     return render(request, 'blog/blog_view.html', context)
 
-class PostDetailView(DeleteView):
+class PostDetailView(DetailView):
     model = Post
     template_name = 'blog/detail.html'
     context_object_name = 'post'
