@@ -17,7 +17,7 @@ body {
    
 }
 .wrapper {
-    background: url('../../../media/stankokukic.jpg');
+    background: url('../../../media/home_pictures/brick.jpg');
     margin-top: 32px;
     padding: 100px;
     background-repeat: no-repeat;
@@ -28,16 +28,19 @@ body {
 }
 
 .nav-link, .nav-item, a {
-    color: white;
     font-family: Lora, serif;
+    font-size: 20px;
 }
 
+.nav-bar ul li a {
+    padding: 12px;
+}
 
 
 .title {
     font-weight: 400;
     font-size: 26px;
-    color: #073d3d;
+    color: #f4f4f4;
 }
 
 .form-headline {
@@ -461,6 +464,13 @@ p{
     font-weight: 400;
 }
 
+.contact-wrapper {
+    background: rgba(142, 103, 25, 0.459)
+}
+
+.headline_contact {
+    font-size: 30px;
+}
 /* RECEPTI -- GALLERY SLIDER */
 
 .gallery-block{

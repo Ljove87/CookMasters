@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container-fluid wrapper">
-        <div class="col-md-4 text-center">
+        <div class="col-md-12 text-center">
                 {% if messages %}
                   {% for message in messages %}
                     <div class="alert alert-{{ message.tags }}">
@@ -14,7 +14,7 @@
         </div>
   <div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-7">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-6">
       <h2 class="title text-center" style="font-family: 'Lora', serif; font-weight: 800;">12 GODINA ISKUSTVA U KUHINJI, POSTAVLJANJU MENIJA, NOVIM RECEPTIMA I SVEMU ŠTO TREBA DA ZNATE O UKUSNOJ HRANI</h2>
       <div class=" w-75 container-fluid">
       <div class="row">
@@ -60,14 +60,16 @@
                 <a href="#ketering" class="btn btn-dark  btn-lg btn-block">Saznaj više</a>
               </div> 
         </div>
-      
-    
-    
     </div>
+      </div>
     </div>
+
+        <div class="container w-50 col-xl-5 mt-5">
+                <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5 ">
+                    <iframe class="embed-responsive-item boxshadow" style=" border: 3px solid #073d3d;" frameborder="0" src="https://www.youtube.com/embed/bUh2rZAEzd0" allowfullscreen></iframe>
+                </div>
+        </div>
   </div>
-    
-    </div>
   </div>
 </div>
 
@@ -85,7 +87,7 @@
         
         <div class="col-xl-4">
             
-                <img class="image_section mx-auto" src="../../../media/icons/serving-dish.png" alt="Card image">
+                <img class="image_section mx-auto" src="../../../media/icons/serving-dish.png" alt="serving-dish, png icon">
                 <div class="card-body">
                   <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">PRIPREMA HRANE</h5>
                   <hr class="mt-4">
@@ -96,7 +98,7 @@
 
         <div class="col-xl-4">
            
-                <img class="card-img-top image_section mx-auto" src="../../../media/icons/754938.svg" alt="Card image">
+                <img class="card-img-top image_section mx-auto" src="../../../media/icons/754938.svg" alt="fork with a soon, png icon">
                 <div class="card-body">
                   <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">KVALITET HRANE</h5>
                   <hr class="mt-4">
@@ -294,9 +296,6 @@
                 <hr>
                 <h4 class="font-weight-bold text-primary">-John Doe</h4>
                 <p>New York, USA</p>
-                <div class="text-center">
-                    <img src="../media/quote.png" class="rounded pb-3"  style="width:35px;" alt="">
-                </div>
                 </div>
           </div>
         </div>
@@ -315,9 +314,6 @@
                 <hr>
                 <h4 class="font-weight-bold text-primary">-Aaron Morris</h4>
                 <p>New York, USA</p>
-                <div class="text-center">
-                    <img src="../media/quote.png" class="rounded pb-3"  style="width:35px;" alt="">
-                </div>
                 </div>
           </div>
         </div>
