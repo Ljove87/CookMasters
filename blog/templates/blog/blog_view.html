@@ -30,50 +30,67 @@
           </section>
         
     
-          <hr class="mt-5 line-split">
+         
     
 
 <!-- posts -->
 
 
 
-<section class="my-5">
-  
-  <h2 class="h1-responsive font-weight-bold text-center my-5">Recent posts</h2>
-  
-  <p class="text-center dark-grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  
-  
-  {% for post in posts %}
-  <div class="row">
-    
-    <div class="col-lg-5 col-xl-4">
-      <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
-        <img class="img-fluid" src="{{ post.image.url }}" alt="Sample image">
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
+              <section>
+                
+                <h2 class="h1-responsive font-weight-bold text-center pt-5" style="color: #333;">Naši Postovi</h2>
+                <hr class="mb-5 line-split">
+                <p class="text-center dark-grey-text w-responsive mx-auto p-2">Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                
+                {% for post in posts %}
+                <div class="row pt-5">
+                  
+                  <div class="col-lg-5 col-xl-4">
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                      <img class="img-fluid" src="{{ post.image.url }}" alt="Sample image">
+                      <a>
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
 
-    </div>
-    <div class="col-lg-7 col-xl-8">
-      <h3 class="font-weight-bold mb-3"><strong>{{ post.title }}</strong></h3>
-      <p class="dark-grey-text">{{ post.content|truncatechars:255}}</p>
-      <p>by <a class="font-weight-bold">{{ post.author }}</a>, {{ post.date_posted|date:"F d, Y" }}</p>
-      <a href="{{ post.get_absolute_url }}" class="btn btn-primary btn-md">Read more</a>
-    </div>
-    
-  </div>
-<hr class="my-5">
-{% endfor %}
-</section>
-<!-- Section: Blog v.3 -->
-  
-    
+                  </div>
+                  <div class="col-lg-7 col-xl-8">
+                    <h3 class="font-weight-bold mb-3"><strong>{{ post.title }}</strong></h3>
+                    <p class="dark-grey-text">{{ post.content|truncatechars:255}}</p>
+                    <p>by <a class="font-weight-bold">{{ post.author }}</a>, {{ post.date_posted|date:"F d, Y" }}</p>
+                    <a href="{{ post.get_absolute_url }}" class="btn btn-primary btn-md">Read more</a>
+                  </div>
+                  
+                </div>
+              <hr class="my-5">
+              {% endfor %}
+              </section>
+              <!-- Section: Blog v.3 -->
+
         </div>
 </main>
 
+<div class="container text-center">
+<div class="pagination">
+    <span class="step-links">
+        {% if posts.has_previous %}
+            <a href="?page=1">&laquo; 1 - </a>
+            <a href="?page={{ posts.previous_page_number }}">predhodna</a>
+        {% endif %}
 
+        <span class="current">
+            Stranica {{ posts.title }} broj {{ posts.paginator.num_pages }}.
+        </span>
+
+        {% if posts.has_next %}
+            <a href="?page={{ posts.next_page_number }}">next</a>
+            <a href="?page={{ posts.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+</div>
 {% endblock content %}

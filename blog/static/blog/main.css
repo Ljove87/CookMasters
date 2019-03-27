@@ -6,6 +6,12 @@
          local('AURORA');
 }
 
+@font-face {
+    font-family: 'Yesteryear-Regular';
+    src: url('../fonts/Yesteryear-Regular.ttf')  format("truetype"),
+         local('Yesteryear-Regular');
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -14,17 +20,45 @@ html {
 body {
     background: #ffffff;
     font-family: Lora, serif;
+    overflow-x: hidden;
    
 }
+.container-fluid {
+    margin-left: 0;
+    padding-left:0;
+}
+
+h1 {
+    font-family:  'Prompt', sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family:  'Yesteryear-Regular' , 'handwriting';
+    font-size: 50px;
+    color: white;
+    
+}
+
+h3 {
+    font-family:  'Prompt', sans-serif;
+    color: white;
+}
+
+.wrapper-home {
+    background: url('../../../media/home_pictures/kitchen2.jpg');
+    height: 800px;
+}
+
+
 .wrapper {
-    background: url('../../../media/home_pictures/brick.jpg');
-    margin-top: 32px;
+    background:#f1f1f1;
     padding: 100px;
     background-repeat: no-repeat;
-    border-bottom: 1px solid black;
+    
 }
 .bg-steel {
-    background-color: #073d3d;
+    background-color: #92C060;
 }
 
 .nav-link, .nav-item, a {
@@ -41,33 +75,66 @@ body {
     font-weight: 400;
     font-size: 26px;
     color: #f4f4f4;
+
 }
 
-.form-headline {
-    background: #073d3d;
-    color: #ffffff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 8px;
-}
-.form {
-    border: 1px solid black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.circle1 {
+    z-index: 1;
+    position: absolute;
+    margin: -33px 0 0 -45px;
 }
 
-.col {
-   margin-top: 27px;
+.slika1 {
+    border: 5px solid white;
+    z-index: -1; 
+    position: relative;
+ 
 }
 
-.form-inside {
-    padding: 20px;
-}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 450s linear infinite;
+    -moz-animation: rotating 450s linear infinite;
+    -ms-animation: rotating 450s linear infinite;
+    -o-animation: rotating 450s linear infinite;
+    animation: rotating 450s linear infinite;
+  }
 
 .vl {
     border-left: 1px solid gray;
     height: 350px;
     margin-left: 15px;
+}
+
+.kartica {
+    margin-top: 15px;
 }
 
 input {
@@ -85,19 +152,23 @@ input {
 } 
 
 .button1:hover {
-    background: #073d3d;
+    background: #92C060;
 }
 
 footer{
-    background: #073d3d;
+    background: url('../../../media/footer/footer.jpg');
+    height: 400px;
 }
+
 .copyright {
-    background: #2e7070;
+    background: rgb(168, 221, 112);
 }
 
 .container-fluid {
-    padding-right:0;
-    padding-left:0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer {
@@ -112,7 +183,7 @@ footer{
 
 .line-split {
     height: 1px;
-    background: #114d4d;
+    background: #92C060;
     width: 330px;
    
 }
@@ -138,6 +209,10 @@ footer{
     font-size: 20px;
 }
 
+.kartica {
+    opacity:0.8;
+}
+
 .text-info {
     margin-top: 80px;
     font-size: 28px;
@@ -146,13 +221,13 @@ footer{
 
 .button-section {
     color: #ffffff;
-    background-color: #073d3d;
+    background-color: #92C060;
     width: 200px;
     
 }
 .button-section:hover {
-    color: #073d3d;
-    border: 1px solid #073d3d;
+    color: #92C060;
+    border: 1px solid #92C060;
     background-color: #ffffff;
 }
 
@@ -168,7 +243,7 @@ footer{
 }
 
 
-  /* ABOOUT ME */
+  /* ABOOUT US */
 
 
 /* hover effect------------------------------------------------- */
@@ -307,9 +382,24 @@ footer{
     transition-delay: 0s;
  }
 /* hover effect end -------------------------------------------- */
-#about-me {
-    margin-top: 50px;
-  }
+
+
+.wrapper-about {
+    background: url('../../../media/about_pics/restoran.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.naslov {
+    font-size: 90px;
+    padding-top:  80px;
+}
+
+.vl {
+    border-left: 6px solid rgb(8, 44, 8);
+    height: 50px;
+}
 
 .display-1 {
     font-size: 60px;
@@ -351,18 +441,18 @@ p{
   
   .slick-slider
   {
-      position: relative;
-      display: block;
-      box-sizing: border-box;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-              user-select: none;
-      -webkit-touch-callout: none;
-      -khtml-user-select: none;
-      -ms-touch-action: pan-y;
-          touch-action: pan-y;
-      -webkit-tap-highlight-color: transparent;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
   }
   
   .slick-list
@@ -472,6 +562,14 @@ p{
     font-size: 30px;
 }
 /* RECEPTI -- GALLERY SLIDER */
+
+.wrapper-recipes {
+    background: url('../../../media/recipes/ketering1.jpg');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .gallery-block{
     padding-bottom: 60px;

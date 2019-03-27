@@ -23,3 +23,6 @@ def contact_view(request):
 def about_view(request):
     return render(request, 'pages/about_page.html')
 
+def recipes_view(request):
+    return render(request, 'pages/recipes.html')
+

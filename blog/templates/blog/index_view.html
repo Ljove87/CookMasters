@@ -2,7 +2,9 @@
 
 {% block content %}
 
-<div class="container-fluid wrapper">
+<div class="container-fluid text-center wrapper-home" style="padding-top: 120px;">
+        <h1 style="font-family: 'Prompt', sans-serif; font-size: 90px; color: white; padding-top: 120px;">3 Musketara</h1>
+        <h2 style="font-family: 'Yesteryear-Regular', handwriting; font-size: 70px; color: white;">Šefovi kuhinje zajedno na jednom mestu</h2>
         <div class="col-md-12 text-center">
                 {% if messages %}
                   {% for message in messages %}
@@ -12,13 +14,38 @@
                   {% endfor %}
                 {% endif %}
         </div>
+        
+    
+    <!-- <div class="row pb-5" style="padding-top: 120px;">
+        <div class="col-xl-4">
+            <img src="../../../media/home_pictures/circle2.png" class="circle1 rotating" alt="liquid circle, png format">
+            <img src="../../../media/profile_pics/viber_image.jpg" class="rounded-circle animated fadeInLeft" alt="Stanko Kukic Cane" style="width:330px;height:330px;">
+            <h2 class="mt-5 mb-5" style=" color: white; font-family:'Courgette', cursive; font-size: 55px;">Cane</h2>
+        </div>
+
+        <div class="col-xl-4">
+            <img src="../../../media/home_pictures/circle2.png" class="circle1 rotating" alt="liquid circle, png format">
+            <img src="../../../media/profile_pics/viber_image.jpg" class="rounded-circle animated fadeInDown delay-1s" alt="Stanko Kukic Cane" style="width:330px;height:330px;">
+            <h2 class="mt-5 mb-5" style=" color: white; font-family:'Courgette', cursive; font-size: 55px;">Bane</h2>
+        </div>
+            
+        <div class="col-xl-4">
+            <img src="../../../media/home_pictures/circle2.png" class="circle1 rotating" alt="liquid circle, png format">
+            <img src="../../../media/profile_pics/viber_image.jpg" class="rounded-circle animated fadeInRight delay-2s" alt="Stanko Kukic Cane" style="width:330px;height:330px;">
+            <h2 class="mt-5 " style=" color: white; font-family:'Courgette', cursive; font-size: 55px;">Ćomi</h2>
+        </div>
+    </div> -->
+</div>
+
+
+<div class="container-fluid wrapper">
   <div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-6">
-      <h2 class="title text-center" style="font-family: 'Lora', serif; font-weight: 800;">12 GODINA ISKUSTVA U KUHINJI, POSTAVLJANJU MENIJA, NOVIM RECEPTIMA I SVEMU ŠTO TREBA DA ZNATE O UKUSNOJ HRANI</h2>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6" >
+      <h3 class="title text-center pb-4" style="color: #333;">12 GODINA ISKUSTVA U KUHINJI, POSTAVLJANJU MENIJA, NOVIM RECEPTIMA I SVEMU ŠTO TREBA DA ZNATE O UKUSNOJ HRANI</h3>
       <div class=" w-75 container-fluid">
       <div class="row">
-        <div class="col col-md-6 text-center">
+        <div class=" col-md-12 col-sm-12 col-xl-6 text-center kartica">
             <div class="card cards">
                 <i class="fa fa-cutlery pt-4 fa-2x" aria-hidden="true"></i>
                 <div class="card-body">
@@ -29,7 +56,7 @@
               </div> 
         </div>
         
-        <div class="col col-md-6 text-center">
+        <div class="col-md-12 col-sm-12 col-xl-6 text-center kartica">
             <div class="card cards">
                 <i class="fa fa-cutlery pt-4 fa-2x" aria-hidden="true"></i>
                 <div class="card-body">
@@ -40,7 +67,7 @@
               </div> 
         </div>
 
-        <div class="col col-md-6 text-center">
+        <div class=" col-md-12 col-sm-12 col-xl-6 text-center mt-3 kartica">
             <div class="card cards">
                 <i class="fas fa-map-marked-alt pt-4 fa-2x" aria-hidden="true"></i>
                 <div class="card-body">
@@ -50,23 +77,23 @@
                 <a href="#adresa" class="btn btn-dark  btn-lg btn-block">Saznaj više</a>
               </div> 
         </div>
-        <div class="col col-md-6 text-center">
+        <div class=" col-md-12 col-sm-12 col-xl-6 text-center mt-3 kartica">
             <div class="card cards">
                 <i class="fa fa-cutlery pt-4 fa-2x" aria-hidden="true"></i>
                 <div class="card-body">
                   <h5 class="card-title text-center">Ketering</h5>
                   <h5 class="card-text text-center">Pitanja i odgovori</h5>
                 </div>
-                <a href="#ketering" class="btn btn-dark  btn-lg btn-block">Saznaj više</a>
+                <a href="#ketering" class="btn btn-dark btn-lg btn-block">Saznaj više</a>
               </div> 
         </div>
     </div>
       </div>
     </div>
 
-        <div class="container w-50 col-xl-5 mt-5">
+        <div class="container w-100 col-xl-5 col-sm-12 col-xs-12 col-md-12 mt-5">
                 <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5 ">
-                    <iframe class="embed-responsive-item boxshadow" style=" border: 3px solid #073d3d;" frameborder="0" src="https://www.youtube.com/embed/bUh2rZAEzd0" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item boxshadow" style=" border: 3px solid #92C060;" frameborder="0" src="https://www.youtube.com/embed/bUh2rZAEzd0" allowfullscreen></iframe>
                 </div>
         </div>
   </div>
@@ -86,21 +113,19 @@
     <div class="row">
         
         <div class="col-xl-4">
-            
                 <img class="image_section mx-auto" src="../../../media/icons/serving-dish.png" alt="serving-dish, png icon">
                 <div class="card-body">
-                  <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">PRIPREMA HRANE</h5>
+                  <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family:  'Prompt', sans-serif;">PRIPREMA HRANE</h5>
                   <hr class="mt-4">
                   <p class="card-text pt-2" style="text-align:center; font-family: 'Lora', serif;">Kreiranje ukusnih specijaliteta za mnoge kulinare je svakodnevni izazov, ali retko ko u tom trenutku razmišlja da li će prilikom kuvanja i pripreme namirnica, jelo izgubiti svoje dragocene sastojke. Upravo zbog toga treba znati neka od osnovnih pravila koja će sprečiti uništavanje vitamina i minerala tokom pripreme jela</p>
                 </div>
-              
         </div>
 
         <div class="col-xl-4">
            
                 <img class="card-img-top image_section mx-auto" src="../../../media/icons/754938.svg" alt="fork with a soon, png icon">
                 <div class="card-body">
-                  <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">KVALITET HRANE</h5>
+                  <h5 class="card-title text-center" style="font-size:32px; color:#073d3d;font-family:  'Prompt', sans-serif;">KVALITET HRANE</h5>
                   <hr class="mt-4">
                   <p class="card-text pt-2" style="text-align:center; font-family: 'Lora', serif;">Danas kod prezentacije hrane, estetska privlačnost sve više dobija na značaju. Način na koji je tanjir aranžiran predstavlja i sam kvalitet restorana. Uspešnost u serviranju hrane pored estetike samog kuvara, potrebno je mnogo truda i rada.</p>
                   
@@ -110,9 +135,9 @@
 
         <div class="col-xl-4">
             
-                <img class="card-img-top image_section mx-auto" src="https://icons-for-free.com/free-icons/png/160/63435.png" alt="Card image">
+                <img class="card-img-top image_section mx-auto" src="../../../media/icons/754938.svg" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family: AURORA;">KAKO POSTATI ŠEF</h5>
+                    <h5 class="card-title text-center" style="font-size:32px; color:#073d3d; font-family:  'Prompt', sans-serif;">KAKO POSTATI ŠEF</h5>
                     <hr class="mt-4">
                     <p class="card-text pt-2" style="text-align:center; font-family: 'Lora', serif;">Svako ko želi da uči, pedantan je i hoće da naporno radi, dobrodošao je u profesiju kuvara. Posla je bilo, ima ga sada a tek će ga biti, i to na višem nivou. Ali, kandidati za buduće kuvare i šefove kuhinja, neka se pripreme na ozbiljan, težak i zahtevan svakodnevni rad</p>
                 
@@ -133,7 +158,7 @@
 <section id="meni" class="container-fluid w-100 second_section">
     <hr class="line-split">
     <div class="container-fluid w-50">
-        <h2 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">Postavka Kuhinje za Vaš restoran</h2>
+        <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family:  'Prompt', sans-serif;">Postavka Kuhinje za Vaš restoran</h1>
         <h5 class="text text-center" style="font-family:Lora, serif">Od malih do restorana pa do restorana koji mogu da prime i preko 500 ljudi</h5>  
     </div>
     <div class="container-fluid w-75">
@@ -199,7 +224,7 @@
 <section id="recepti" class="container-fluid w-100 second_section p-4" style="background-color: #f1f1f1">
     <hr class="line-split">
     <div class="container-fluid w-50">
-        <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">Novi uskusni recepti koje morate da imate</h1>
+        <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family:  'Prompt', sans-serif;">Novi uskusni recepti koje morate da imate</h1>
         <h5 class="text text-center" style="font-family:Lora, serif">Pravljenje novih recepata za vaš restoran</h5>  
     </div>
     <div class="container-fluid w-75">
@@ -220,7 +245,7 @@
 <section id="adresa" class="container-fluid w-100 second_section">
         <hr class="line-split">
         <div class="container-fluid w-50">
-            <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">Kuvanje na Vašoj adresi</h1>
+            <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family:  'Prompt', sans-serif;">Kuvanje na Vašoj adresi</h1>
             <h5 class="text text-center" style="font-family:Lora, serif">Dolazak lično na vašu kuću ili stan</h5>  
         </div>
         <div class="container-fluid w-75">
@@ -245,7 +270,7 @@
 <section id="ketering" class="container-fluid w-100 second_section p-4" style="background-color: #f1f1f1">
         <hr class="line-split">
         <div class="container-fluid w-50">
-            <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family: AURORA;">KETERING</h1>
+            <h1 class="text-center mt-5 mb-5" style="color:#073d3d; font-family:  'Prompt', sans-serif;">KETERING</h1>
             <h5 class="text text-center" style="font-family:Lora, serif">Slani i slatki ketering za rođendane, venčanja, korporativne proslave, slave...</h5>  
         </div>
         <div class="container-fluid w-75">
