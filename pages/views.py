@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from .forms import ContactForm
 
+
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST or None)
@@ -14,15 +15,16 @@ def contact_view(request):
             message = form.cleaned_data['message']
             messages.success(request, f'Uspesno ste poslali poruku')
             return redirect('/')
-            
+
     else:
         form = ContactForm()
 
-    return render(request, 'pages/contact.html', {'form': form })
+    return render(request, 'pages/contact.html', {'form': form})
+
 
 def about_view(request):
     return render(request, 'pages/about_page.html')
 
+
 def recipes_view(request):
     return render(request, 'pages/recipes.html')
-

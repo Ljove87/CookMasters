@@ -9,6 +9,7 @@ from django.views.generic import DetailView, ListView
 def index_view(request):
     return render(request, 'blog/index_view.html')
 
+
 def blog_view(request):
     posts = Post.objects.all()
     paginator = Paginator(posts, 5)
@@ -19,6 +20,7 @@ def blog_view(request):
         'posts': Post.objects.all()
     }
     return render(request, 'blog/blog_view.html', {'posts': posts})
+
 
 class PostDetailView(DetailView):
     model = Post

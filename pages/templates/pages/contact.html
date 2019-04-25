@@ -1,57 +1,77 @@
-
-
-{% extends "blog/base.html" %}
-{% load crispy_forms_tags %}
-
-{% block content %}
-
-<div class="text-center animated fadeIn container mt-5 pt-5 " data-ride="carousel">
-        <div class="carousel-item active ">         
-            <div class="carousel-caption">
-                <h1 class="display-1 pb-2" style="color: #333; font-family: AURORA;">Kontakt</h1>
-                <h4 class="mb-4" style="font-family: Lora, serif;color: #333;">Pošaljite upit ili me konaktirajte ako vam je potrebna pomoć pravog chefa</h4>
-                <a href=""><button type="button" class="btn btn-lg btn-outline-dark mt-5">Cane The Chef</button></a>
-            </div>
-        </div>
-</div>
-
-<div class="p-1"style="margin-top: 350px;">  
-        <div class="flex-center flex-column">  
-          <h1 class="wow fadeInLeft slow mb-4 headline_contact">Kuvajte sa ljubavlju <i class="fa fa-heart red-text"></i></h1>
-        </div>  
-</div>
-
-<div class="container-fluid">
-    <div class="container w-75 mt-5 mb-5">
-        <div class="row">
-            <div class="col-xl-8 col-xs-12 col-md-6 col-sm-12">
-                <form action="" method="POST" class="form-group">{% csrf_token %}
-                    {{ form|crispy}}
-                    <button class="btn btn-outline-dark" type="submit">Posaljite poruku</button>
-                </form>
-            </div>
-            <div class="col-xs-5 col-xl-4 col-md-6 col-sm-10">
-                <div class="float-right mt-2">
-                    <div class="blockquote text-center">
-                            <i class="fas fa-phone"></i> 
-                                <h2 class="display-4 contact-headlines">Kontakt telefon
-                                <p class="card-text" style="font-weight: 300;">064/3201548</p></h2>
-                    </div>
-                    <hr>
-                    <div class="blockquote text-center">
-                            <i class="fas fa-envelope"></i>
-                                <h2 class="display-4 contact-headlines">Moja Email Adresa 
-                                <p class="card-text" style="font-weight: 300;">stankokuvar@gmail.com</p></h2>
-                    </div>
-                    <hr>
-                    <div class="blockquote text-center">
-                            <i class="fas fa-map-marker"></i>
-                                <h2 class="display-4 contact-headlines">Moja Lokacija 
-                                <p class="card-text" style="font-weight: 300;">Milete Jaksica 2</p></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+{% extends "blog/base.html" %} {% load crispy_forms_tags %} {% block content %}
+<div class="container-fluid contact-wrapper">
+  <div class="text-center animated fadeIn container mt-4 pt-5">
+    <div>
+      <div>
+        <h1 class="display-1 pb-2 pt-2" style="color: #333;">Kontakt</h1>
+        <h4 class="mb-4 pt-5" style="color: #333;">
+          Pošaljite upit ili me konaktirajte ako vam je potrebna pomoć pravog
+          chefa
+        </h4>
+        <a href="{% url 'about-page' %}"
+          ><button type="button" class="btn button-contact">O Nama</button></a
+        >
+      </div>
     </div>
+  </div>
+
+  <div class="p-1">
+    <div class="flex-center flex-column">
+      <h1 class="wow heartBeat slow p-5" style="color: #333;">
+        Kuvajte sa ljubavlju <i class="fa fa-heart red-text"></i>
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid contact-image" style="padding-top: 30px;">
+  <div class="container w-75 pt-5 pb-5">
+    <div class="row">
+      <div class="col-xl-8 col-xs-12 col-md-6 col-sm-12">
+        <div class="border" style="padding: 30px;">
+          <form action="" method="POST" class="form-group">
+            {% csrf_token %}
+            {{ form | crispy }}
+            <button class="btn button-contact" type="submit">
+              Pošaljite poruku
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-5 col-xl-4 col-md-6 col-sm-10">
+        <div class="float-right">
+          <div class="blockquote text-center">
+            <i class="fas fa-phone"></i>
+            <h2 class="display-4 contact-headlines" style="color: #92C060;">
+              Kontakt telefon
+            </h2>
+            <p class="card-text" style="font-weight: 300;" style="color: #333;">
+              064/3201548
+            </p>
+          </div>
+          <hr />
+          <div class="blockquote text-center">
+            <i class="fas fa-envelope"></i>
+            <h2 class="display-4 contact-headlines" style="color: #92C060;">
+              Moja Email Adresa
+            </h2>
+            <p class="card-text" style="font-weight: 300;" style="color: #333;">
+              stankokuvar@gmail.com
+            </p>
+          </div>
+          <hr />
+          <div class="blockquote text-center">
+            <i class="fas fa-map-marker"></i>
+            <h2 class="display-4 contact-headlines" style="color: #92C060;">
+              Moja Lokacija
+            </h2>
+            <p class="card-text" style="font-weight: 300;" style="color: #333;">
+              Milete Jaksica 2
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock content %}

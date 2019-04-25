@@ -1,105 +1,208 @@
-{% extends "blog/base.html" %}
-{% block content %}
+{% extends "blog/base.html" %} {% block content %}
 
-<div class="container-fluid  text-center wrapper-recipes" style="padding-top: 120px;">
-        <h2 class="naslov">Recepti</h2>
-        <h3>Svi naši recepti na jednom mestu - Ukusna hrana koja ce Vas ODUŠEVITI</h3>
-    </div>
+<div
+  class="container-fluid  text-center wrapper-recipes"
+  style="padding-top: 120px;"
+>
+  <h2 class="naslov">Recepti</h2>
+  <h3>Svi naši recepti na jednom mestu - Ukusna hrana koja ce Vas ODUŠEVITI</h3>
+</div>
 
 <div class="container">
-    <h2 class="text-center mt-5" style="color:#333;">Pravljenje novih recepata</h2>
-    <h3 class="text-center pb-4" style="color:#333;">Preuzmite recept ili zatrazite sasvim Novi!!!</h3>
-    <p class="text-center"  style="color:#333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo magna, tincidunt non sollicitudin in, elementum at arcu. Donec vel mauris vel magna imperdiet ullamcorper. Cras molestie massa id condimentum hendrerit. Donec vel odio eget erat auctor pulvinar. Integer luctus aliquet velit, eu vulputate nulla. Nulla iaculis arcu sed sapien scelerisque, vitae aliquam dui cursus. Nulla vel viverra erat. Sed ex dui, mattis fermentum iaculis in, mattis sit amet turpis.</p>
+  <h2 class="text-center mt-5" style="color:#333;">
+    Pravljenje novih recepata
+  </h2>
+  <h3 class="text-center pb-4" style="color:#333;">
+    Preuzmite recept ili zatrazite sasvim Novi!!!
+  </h3>
+  <p class="text-center" style="color:#333;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo magna,
+    tincidunt non sollicitudin in, elementum at arcu. Donec vel mauris vel magna
+    imperdiet ullamcorper. Cras molestie massa id condimentum hendrerit. Donec
+    vel odio eget erat auctor pulvinar. Integer luctus aliquet velit, eu
+    vulputate nulla. Nulla iaculis arcu sed sapien scelerisque, vitae aliquam
+    dui cursus. Nulla vel viverra erat. Sed ex dui, mattis fermentum iaculis in,
+    mattis sit amet turpis.
+  </p>
 </div>
 
 <section class="gallery-block compact-gallery">
   <div class="container-fluid w-75">
-      <div class="heading">
-          <h1 style="color:#333;">Galerija naših skorijih radova</h1>
+    <div class="heading">
+      <h1 style="color:#333;">Galerija naših skorijih radova</h1>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-md-6 col-lg-4 col-xl-6 item zoom-on-hover">
+        <a class="lightbox" href="../../../media//recipes/musli.jpg">
+          <img
+            class="img-fluid image"
+            src="../../../media//recipes/musli.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
       </div>
-      <div class="row no-gutters">
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media//recipes/musli.jpg">
-                  <img class="img-fluid image" src="../../../media//recipes/musli.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-2-V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-2-V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-3-V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-3-V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-4V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-4V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-                  </a>
-              </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-5-V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-5-V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-6V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-6V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-7V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-7V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-9-V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-9-V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
-          <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="../../../media/recipes/IMG-5-V.jpg">
-                  <img class="img-fluid image" src="../../../media/recipes/IMG-5-V.jpg">
-                  <span class="description">
-                      <span class="description-heading">Lorem Ipsum</span>
-                      <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                  </span>
-              </a>
-          </div>
+      <div class="col-md-6 col-lg-4 col-xl-6 item zoom-on-hover">
+        <a
+          class="lightbox"
+          href="../../../media/recipes/slike hrana/comi slike/11.jpg"
+        >
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/slike hrana/comi slike/11.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
       </div>
+      <div class="col-md-6 col-lg-4 item zoom-on-hover">
+        <a
+          class="lightbox"
+          href="../../../media/recipes/slike hrana/stanko slike/43.jpg"
+        >
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/slike hrana/stanko slike/42.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item zoom-on-hover">
+        <a class="lightbox" href="../../../media/recipes/IMG-4V.jpg">
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/IMG-4V.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item zoom-on-hover">
+        <a class="lightbox" href="../../../media/recipes/">
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/IMG-5-V.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-6 item zoom-on-hover">
+        <a class="lightbox" href="../../../media/recipes/IMG-6V.jpg">
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/slike hrana/stanko slike/60.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-6 item zoom-on-hover">
+        <a class="lightbox" href="../../../media/recipes/IMG-7V.jpg">
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/IMG-7V.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item zoom-on-hover">
+        <a class="lightbox" href="../../../media/recipes/IMG-9-V.jpg">
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/IMG-9-V.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item zoom-on-hover">
+        <a class="lightbox" href="../../../media/recipes/IMG-5-V.jpg">
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/IMG-5-V.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 item zoom-on-hover">
+        <a
+          class="lightbox"
+          href="../../../media/recipes/slike hrana/stanko slike/70.jpg"
+        >
+          <img
+            class="img-fluid image"
+            src="../../../media/recipes/slike hrana/stanko slike/70.jpg"
+          />
+          <span class="description">
+            <span class="description-heading">Lorem Ipsum</span>
+            <span class="description-body"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</span
+            >
+          </span>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 

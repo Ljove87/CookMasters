@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'suit_ckeditor',
     'django.contrib.auth',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -44,6 +46,8 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
 ]
+
+SITE_ID = 1
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 

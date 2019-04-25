@@ -11,11 +11,13 @@ class PostForm(ModelForm):
             'name': CKEditorWidget(editor_options={'startupFocus': True})
         }
 
+
 class PostAdmin(admin.ModelAdmin):
     form = PostForm
     list_display = ['title', 'slug', 'date_posted', 'author']
     list_filter = ['title', 'date_posted']
-    
-    prepopulated_fields = { 'slug': ('title',)}
+
+    prepopulated_fields = {'slug': ('title',)}
+
 
 admin.site.register(Post, PostAdmin)

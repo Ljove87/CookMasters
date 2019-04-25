@@ -4,11 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-
-
 urlpatterns = [
     path('o-nama/', views.about_view, name='about-page'),
     path('contact/', views.contact_view, name='contact-page'),
     path('recepti/', views.recipes_view, name='recipes-page'),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
