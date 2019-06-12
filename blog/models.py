@@ -10,6 +10,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(
         help_text="A short label, generally used in URLs.", default='', max_length=100)
+
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
     content = RichTextUploadingField(blank=True, null=True)
     date_posted = models.DateTimeField(default=timezone.now)

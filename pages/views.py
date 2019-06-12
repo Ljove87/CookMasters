@@ -28,3 +28,15 @@ def about_view(request):
 
 def recipes_view(request):
     return render(request, 'pages/recipes.html')
+
+
+def training(request):
+    return render(request, 'pages/obuka_ljudi.html')
+
+
+def popup_view(request):
+    return render(request, 'pages/popup_kuvari.html')
+
+
+def meni(request):
+    return render(request, 'pages/postavka_kuhinje.html')

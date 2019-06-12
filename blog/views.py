@@ -19,7 +19,7 @@ def blog_view(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/blog_view.html', {'posts': posts})
+    return render(request, 'blog/blog_view.html', context)
 
 
 class PostDetailView(DetailView):

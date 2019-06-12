@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Post
+
 from django.forms import ModelForm
 from django.contrib.admin import ModelAdmin
 from suit_ckeditor.widgets import CKEditorWidget
