@@ -28,7 +28,7 @@ pythonanywhere==0.7.4
 pytz==2018.9
 requests==2.21.0
 six==1.12.0
-urllib3==1.24.1
+urllib3==1.26.5
 virtualenv==16.2.0
 virtualenv-clone==0.5.1
 virtualenvwrapper-win==1.2.5
